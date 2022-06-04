@@ -1,0 +1,58 @@
+.sidebar{
+    flex: 2 ;
+    padding: 1rem;
+    right: 0;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userImg{
+    height: 7vh;
+    width: auto;
+    object-fit: contain;    
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.blueColor{
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.header{
+    font-size: 1rem;
+    color: grey;
+}
+.sugUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.sugUserImg{
+    object-fit: contain;
+    height: 5vh;
+    width: 2vw;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
