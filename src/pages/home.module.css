@@ -11,10 +11,11 @@
     display: flex;
     flex-direction: column;
     max-width: 720px;
-    margin-right: 2rem;
 }
 
 .mainRight{
     flex-grow: 1;
     max-width: 300px;
+    margin-left: 2rem;
 }
+

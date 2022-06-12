@@ -4,9 +4,12 @@ import styles from './story.module.css'
 const Story = () => {
     return (
         <div className={styles.userStory}>
-            <img
-                className={styles.userImg}
-                src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-14.jpg"></img>
+            <div className={styles.imgWrapper}>
+
+                <img
+                    className={styles.userImg}
+                    src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-14.jpg"></img>
+            </div>
             <span>username</span>
         </div>
     )

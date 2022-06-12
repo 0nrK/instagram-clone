@@ -1,0 +1,27 @@
+.comment{
+    display: flex;
+    flex-direction: row;
+    margin: 0.7rem 0;
+}
+
+.username{
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.text{
+    font-size: 0.9rem;
+}
+
+.replyTo{
+    color: #00376B;
+    margin-right: 4px;
+    font-size: 0.9rem;
+}
+
+.textWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}

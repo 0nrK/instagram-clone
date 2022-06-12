@@ -5,6 +5,7 @@
     border: 1px solid lightgrey;
     border-radius: 8px;
     margin: 1rem 0;
+    
 }
 .postHeader{
     display: flex;
@@ -53,9 +54,10 @@
 }
 .postImg{
     max-height: 70vh;
+    width: 100%;
     background-color: black;
     object-fit: contain;
-    width: 100%;
+  
 }
 
 .timestamp{

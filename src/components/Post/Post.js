@@ -3,6 +3,7 @@ import styles from './post.module.css'
 import { BsBookmark, BsChatSquareQuote, BsHeart, BsThreeDots } from 'react-icons/bs'
 import { TbSend } from 'react-icons/tb'
 import { AiOutlineSmile } from 'react-icons/ai'
+import Comment from '../Comment/Comment'
 const Post = () => {
     return (
         <div className={styles.post}>
@@ -38,11 +39,13 @@ const Post = () => {
                     <span className={styles.desc}>LoremId officia amet occaecat reprehenderit. Qui consectetur eu aute laborum dolore. Proident nulla exercitation qui velit incididunt aute consectetur qui commodo laborum in...</span>
                 </div>
                 <span className={styles.timestamp}>3 HOURS AGO</span>
+                <Comment />
                 <div className={styles.commentInput}>
                     <AiOutlineSmile />
                     <input type='text' placeholder='Add a comment...'></input>
                     <span className={styles.postBtn}>Post</span>
                 </div>
+
             </div>
         </div>
     )

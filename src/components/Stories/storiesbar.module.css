@@ -5,12 +5,37 @@
     overflow-x: auto;
     width: 100%;
     margin-top: 1rem;   
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     background-color: white;
     border-radius: 8px;
+    max-width: 100vw;
 }
 
-.storiesBar::-webkit-scrollbar{
-    display: none;
+
+
+
+.storiesBar::-webkit-scrollbar {
+    width: 5px;
+    height: 0.5rem;
 }
 
+.storiesBar::-webkit-scrollbar-track {
+    background: rgb(234, 234, 234);
+}
+
+.storiesBar::-webkit-scrollbar-thumb {
+    background: rgb(162, 157, 157);
+    border-radius: 10px;
+  }
+
+
+
+.storiesBar::-webkit-scrollbar-thumb:active {
+    background: rgb(162, 152, 152);
+}
+
+@media screen and (max-width: 1024px)  {
+    .storiesBar{
+
+    }
+}

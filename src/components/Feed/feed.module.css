@@ -1,2 +1,8 @@
 .feed{
 }
+
+@media screen and (max-width: 1024px)  {
+    .feed{
+        padding: 0 2rem;
+    }
+}
