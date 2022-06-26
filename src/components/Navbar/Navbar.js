@@ -5,8 +5,6 @@ import { MdHomeFilled } from 'react-icons/md'
 import { BsPlusSquare } from 'react-icons/bs'
 import { RiSendPlaneLine } from 'react-icons/ri'
 import { TbSend } from 'react-icons/tb'
-import { ModalContext } from '../../context/AddPostModal/modalContext'
-import { openModal } from '../../context/AddPostModal/modalActions'
 import Modal from '../AddPostModal/AddPostModal'
 
 
@@ -14,7 +12,6 @@ const Navbar = () => {
 
     const [isModalOpened, setIsModalOpened] = useState(false)
 
-    const { dispatch } = useContext(ModalContext)
 
     useEffect(() => {
         window.scrollTo(0, 0)

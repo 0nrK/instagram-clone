@@ -40,8 +40,8 @@
 }
 .userImg{
     border-radius: 100%;
-    width: 3vw;
-    object-fit: contain;
+    width: 2.5vw;
+    object-fit: cover;
     height: 5vh;
     padding: 0.5rem 0;
     margin-right: 0.7rem;
@@ -107,4 +107,16 @@
     color: #0095F6;
     font-size: 1rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px)  {
+    .post{
+        padding: 0 1rem;
+    }
+
+    .userImg{
+        width: 7vw;
+        height: 5vh;
+        object-fit: cover;
+    }
 }

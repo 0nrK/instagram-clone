@@ -3,6 +3,8 @@
 
 @media screen and (max-width: 1024px)  {
     .feed{
-        padding: 0 2rem;
+        padding: 0 0rem;
+        overflow-x: hidden;
+        width: 100vw;
     }
 }

@@ -7,6 +7,7 @@
     font-size: 0.75rem;
     align-items: center;
     text-align: center;
+    
 }
 
 .imgWrapper{
@@ -14,6 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 4vw;
+    height: 7.5vh;
     flex-direction: row;
     border: 1px solid red;
     padding: 0.1rem;
@@ -23,8 +26,26 @@
     width: 100%;
     height: 100%;
     cursor: pointer;
-    object-fit: contain;    
+    object-fit: cover;    
     border-radius: 100%;
 }
 
 
+@media screen and (max-width: 1024px)  {
+    .userStory{
+       width: 15vw;
+       height: 15vh;
+       margin-left: 1rem;
+    }
+    .imgWrapper{
+        width: 15vw;
+        height: 11vh;
+        padding: 0.15rem;
+        object-fit: cover;
+
+    }
+    .userImg{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -36,6 +36,6 @@
 
 @media screen and (max-width: 1024px)  {
     .storiesBar{
-
+       padding: 0.5rem;
     }
 }

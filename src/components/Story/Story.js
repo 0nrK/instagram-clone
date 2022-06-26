@@ -1,16 +1,17 @@
 import React from 'react'
 import styles from './story.module.css'
 
-const Story = () => {
+const Story = ({ props }) => {
+    console.log('props', props);
     return (
         <div className={styles.userStory}>
             <div className={styles.imgWrapper}>
 
                 <img
                     className={styles.userImg}
-                    src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-14.jpg"></img>
+                    src={props.profilePicture}></img>
             </div>
-            <span>username</span>
+            <span>{props.username}</span>
         </div>
     )
 }

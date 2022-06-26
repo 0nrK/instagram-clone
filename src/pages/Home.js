@@ -8,7 +8,7 @@ import styles from './home.module.css'
 
 const Home = () => {
     return (
-        <div>
+        <div className={styles.home}>
             <Navbar />
             <div className={styles.main}>
                 <div className={styles.mainLeft}>

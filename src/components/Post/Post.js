@@ -4,23 +4,23 @@ import { BsBookmark, BsChatSquareQuote, BsHeart, BsThreeDots } from 'react-icons
 import { TbSend } from 'react-icons/tb'
 import { AiOutlineSmile } from 'react-icons/ai'
 import Comment from '../Comment/Comment'
-const Post = () => {
+const Post = ({ props }) => {
     return (
         <div className={styles.post}>
             <div className={styles.postHeader}>
                 <div className={styles.postHeaderLeft}>
                     <img
                         className={styles.userImg}
-                        src="https://icon-library.com/images/no-user-image-icon/no-user-image-icon-14.jpg"
+                        src={props.profilePicture}
                         alt='userimg' />
-                    <span className={styles.username}>Username</span>
+                    <span className={styles.username}>{props.username}</span>
                 </div>
                 <BsThreeDots className={styles.dotIcon} />
             </div>
             <div>
                 <img
                     className={styles.postImg}
-                    src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80"
+                    src={props.postImg}
                     alt='postimg' />
             </div>
             <div className={styles.postBottom}>
@@ -35,8 +35,8 @@ const Post = () => {
                     </div>
                 </div>
                 <div className={styles.textWrapper}>
-                    <span className={styles.username}>Username</span>
-                    <span className={styles.desc}>LoremId officia amet occaecat reprehenderit. Qui consectetur eu aute laborum dolore. Proident nulla exercitation qui velit incididunt aute consectetur qui commodo laborum in...</span>
+                    <span className={styles.username}>{props.username}</span>
+                    <span className={styles.desc}>{props.postDesc}</span>
                 </div>
                 <span className={styles.timestamp}>3 HOURS AGO</span>
                 <Comment />

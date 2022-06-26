@@ -10,10 +10,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
+    cursor: pointer;
 
 }
 
@@ -22,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     width: 50vw;
+    border-radius: 8px;
     height: 50vh;
     border: 1px solid lightgray;
     background-color: #fff;
@@ -31,6 +33,10 @@
     height: 100vh;
     width: 100vw;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     left: 0;
     top: 0;
     bottom: 0;
@@ -43,8 +49,16 @@
     background-color: #0095F6;
     border-radius: 6px;
     padding: 5px 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .closeModalBtn {
+    justify-content: flex-end;
+    width: 3vw;
+    height: 3vh;
+    font-size: 1.2rem;
     cursor: pointer;
 }

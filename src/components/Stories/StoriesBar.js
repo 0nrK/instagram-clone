@@ -1,28 +1,16 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Story from '../Story/Story'
 import styles from './storiesbar.module.css'
+import { Users } from '../../data.js'
 
 const StoriesBar = () => {
 
+    const [users, setUsers] = useState(Users)
 
 
     return (
         <div className={styles.storiesBar}>
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
-            <Story />
+            {users.map((user) => <Story key={user.id} props={user} />)}
         </div>
     )
 }
