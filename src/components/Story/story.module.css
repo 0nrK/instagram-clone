@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4vw;
-    height: 7.5vh;
+    width: 5rem;
+    height: 5rem;
     flex-direction: row;
     border: 1px solid red;
     padding: 0.1rem;
@@ -31,17 +31,17 @@
 }
 
 
-@media screen and (max-width: 1024px)  {
+@media screen and (max-width: 768px)  {
     .userStory{
        width: 15vw;
        height: 15vh;
        margin-left: 1rem;
     }
     .imgWrapper{
-        width: 15vw;
-        height: 11vh;
+        width: 4rem;
+        height: 4rem;
         padding: 0.15rem;
-        object-fit: cover;
+        object-fit: contain;
 
     }
     .userImg{

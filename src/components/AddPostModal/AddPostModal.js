@@ -21,7 +21,13 @@ const Modal = ({ isOpened, children, onClose }) => {
                 </span>
                 <div className={styles.modalContent}>
                     <div className={styles.modalBox}>
-                        {children}
+                        <div className={styles.modalHeader}>
+                            <h3>Create new post</h3>
+                        </div>
+                        <div className={styles.modalBoxBottom}>
+                            <p>Drag photos and videos here</p>
+                            <button>Select from computer</button>
+                        </div>
                     </div>
                 </div>
             </div>

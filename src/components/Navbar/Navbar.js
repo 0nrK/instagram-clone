@@ -3,7 +3,7 @@ import styles from './navbar.module.css'
 import { AiOutlineSearch, AiOutlineHeart, AiOutlineCompass } from 'react-icons/ai'
 import { MdHomeFilled } from 'react-icons/md'
 import { BsPlusSquare } from 'react-icons/bs'
-import { RiSendPlaneLine } from 'react-icons/ri'
+import { RiSendPlaneLine, RiWindowLine } from 'react-icons/ri'
 import { TbSend } from 'react-icons/tb'
 import Modal from '../AddPostModal/AddPostModal'
 
@@ -15,8 +15,8 @@ const Navbar = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-        const body = document.querySelector('body');
-        body.style.overflow = isModalOpened ? 'hidden' : 'auto';
+        document.body.style.overflow = 'hidden'
+        console.log(document.body.style);
     }, [isModalOpened])
 
     return (
@@ -44,15 +44,11 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-            {isModalOpened && <Modal
-                isOpened={isModalOpened}
-                onClose={() => setIsModalOpened(false)}>
-                <div>
-                    <h3>Create new post</h3>
-                    <p>Drag photos and videos here</p>
-                    <button>Select from computer</button>
-                </div>
-            </Modal>}
+            {isModalOpened &&
+                <Modal
+                    isOpened={isModalOpened}
+                    onClose={() => setIsModalOpened(false)} />
+            }
         </>
     )
 }

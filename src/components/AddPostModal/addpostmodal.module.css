@@ -1,6 +1,8 @@
 
-.modal{
-
+.modalHeader{
+border-bottom: 1px solid lightgray;
+width: 100%;
+text-align: center;
 }
 
 .modalBackground{
@@ -21,10 +23,11 @@
 .modalBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 50vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+    height: 40vw;
     border-radius: 8px;
-    height: 50vh;
     border: 1px solid lightgray;
     background-color: #fff;
 }
@@ -43,22 +46,49 @@
     right: 0;
     z-index: 99999999;
 }
-
-.modalBox > button {
+.modalBox{
+    
+}
+.modalBoxBottom > button {
     color:#fff;
     background-color: #0095F6;
-    border-radius: 6px;
+    width: 10vw;
     padding: 5px 9px;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: none;
+    font-weight: bold;
 }
 
 .closeModalBtn {
-    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
     width: 3vw;
     height: 3vh;
     font-size: 1.2rem;
     cursor: pointer;
+    color: white;
+    
 }
+
+@media screen and (max-width: 1024px)  {
+    .modalBox{
+    height: 60vh;
+       width: 80vw;
+    }
+
+    .closeModalBtn{
+        width: 10vw;
+    }
+
+    .modalBoxBottom > button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
